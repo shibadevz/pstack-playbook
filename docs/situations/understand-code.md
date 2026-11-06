@@ -1,0 +1,19 @@
+# เข้าใจโค้ด
+
+ใช้เมื่อต้องรู้ก่อนว่าโค้ดทำงานอย่างไรหรือทำไมถึงเป็นแบบนี้ และยังไม่ต้องการแก้อะไร
+
+## เริ่มจากสิ่งเหล่านี้ (เรียงตามลำดับ)
+
+1. [**/pstack:how**](/skills/how.md) — อธิบายกลไกปัจจุบันของ subsystem เช่น flow ของ scheduler และ Where Things Live. วิธีเรียก: พิมพ์ `/pstack:how`
+2. [**/pstack:why**](/skills/why.md) — สืบเหตุผลจาก git, issue และแหล่งอื่นที่มี เช่นทำไม timeout เป็น 30 วินาที. วิธีเรียก: พิมพ์ `/pstack:why`
+3. [**/pstack:teach**](/skills/teach.md) — เรียก how และ why แล้วถักเป็นคำอธิบายเดียวที่เข้าใจง่าย เหมาะเมื่อเป้าหมายคือเข้าใจ ไม่ใช่แก้. วิธีเรียก: พิมพ์ `/pstack:teach`
+4. [**/pstack:recall**](/skills/recall.md) — เปิดแชตใหม่แล้วอยากได้ context งานสัปดาห์ก่อนจากประวัติแชตและสถานะ git. วิธีเรียก: พิมพ์ `/pstack:recall`
+5. [**Playbook: Investigation**](/playbooks/investigation.md) — คำถามแบบอ่านอย่างเดียวภายใต้ poteto-mode ได้ผลสรุปที่อ้างอิงได้โดยไม่มีโค้ดเปลี่ยน. วิธีเรียก: พิมพ์ `/pstack:poteto-mode investigate why <symptom>. don't change any code yet.`
+
+## ตัวอย่าง prompt
+
+```text
+use /pstack:how to understand the job scheduler in src/scheduler/. then use /pstack:why to find out why it broke recently.
+```
+
+เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน
