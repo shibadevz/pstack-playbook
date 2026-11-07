@@ -2,18 +2,20 @@
 
 ใช้เมื่อต้องเขียนหรือเล่าให้คนอ่านเข้าใจ เช่น docs, PR description หรือ reply ของ agent
 
-## เริ่มจากสิ่งเหล่านี้ (เรียงตามลำดับ)
+## เลือกใช้ตามสถานการณ์
 
-1. [**/pstack:technical-writing**](/skills/technical-writing) — มาตรฐานเขียน docs, RFC, README, PR description และ commit message.
+ไม่ต้องใช้ครบทุกตัว เลือกตัวที่ตรงกับงานตอนนั้น ถ้าไม่แน่ใจให้เริ่มจากตัวแรก
+
+- [**/pstack:technical-writing**](/skills/technical-writing) — มาตรฐานเขียน docs, RFC, README, PR description และ commit message
 
    <PromptBlock compact text="/pstack:technical-writing เขียน PR description สำหรับ branch นี้ ให้มี why, what changed, scope, blast radius และ verification" />
-2. [**/pstack:unslop**](/skills/unslop) — ตัวคำและรูปประโยคที่ดูเหมือน AI เขียนออกจากข้อความ.
+- [**/pstack:unslop**](/skills/unslop) — ตัวคำและรูปประโยคที่ดูเหมือน AI เขียนออกจากข้อความ
 
    <PromptBlock compact text="/pstack:unslop ข้อความนั้น ไม่เอา emdash" />
-3. [**/pstack:bro**](/skills/bro) — ให้ agent เล่า reply ล่าสุดใหม่เป็นภาษาคนธรรมดาและสั้นลง.
+- [**/pstack:bro**](/skills/bro) — ให้ agent เล่า reply ล่าสุดใหม่เป็นภาษาคนธรรมดาและสั้นลง
 
    <PromptBlock compact text="/pstack:bro ช่วยเล่าข้อความล่าสุดเป็นภาษาคนธรรมดา สั้นๆ ไม่มี jargon" />
-4. [**/pstack:ketchup**](/skills/ketchup) — สรุปสิ่งที่เปลี่ยนในแชตตั้งแต่ข้อความล่าสุดของคุณ.
+- [**/pstack:ketchup**](/skills/ketchup) — สรุปสิ่งที่เปลี่ยนในแชตตั้งแต่ข้อความล่าสุดของคุณ
 
    <PromptBlock compact text="/pstack:ketchup ช่วยตามให้ทันว่าในแชตนี้มีอะไรเปลี่ยนไปบ้าง" />
 

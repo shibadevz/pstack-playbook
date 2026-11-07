@@ -2,13 +2,15 @@
 
 ใช้เมื่ออยากให้ PStack เข้ากับวิธีทำงานของตัวเองหรือทีม หน้านี้อ่านได้โดยไม่ต้องใช้ database
 
-## เริ่มจากสิ่งเหล่านี้ (เรียงตามลำดับ)
+## เลือกใช้ตามสถานการณ์
 
-1. **/pstack:setup-pstack** — เปลี่ยน model ต่อ role และ reasoning budget ที่ใช้ มีผลตั้งแต่ dispatch ถัดไป. วิธีเรียก: พิมพ์ `/pstack:setup-pstack`
-2. **/pstack:automate-me** — สร้าง personal `-mode` skill จากนิสัยการทำงานของตัวเอง. วิธีเรียก: พิมพ์ `/pstack:automate-me`
-3. **/pstack:reflect** — หลังจบงาน เปลี่ยนบทเรียนเป็นการแก้ skill ที่มีอยู่ซึ่งคุณอนุมัติ. วิธีเรียก: พิมพ์ `/pstack:reflect`
-4. **/pstack:correct** — แก้ที่ repo ไม่ให้ agent ทำผิดแบบเดิมซ้ำ. วิธีเรียก: พิมพ์ `/pstack:correct`
-5. **Playbook: Authoring or modifying a skill** — เขียนหรือแก้ SKILL.md ผ่าน playbook เพื่อให้มี validate และรีวิว. วิธีเรียก: พิมพ์ `/pstack:poteto-mode write a skill for <workflow>.`
+ไม่ต้องใช้ครบทุกตัว เลือกตัวที่ตรงกับงานตอนนั้น ถ้าไม่แน่ใจให้เริ่มจากตัวแรก
+
+- **/pstack:setup-pstack** — เปลี่ยน model ต่อ role และ reasoning budget ที่ใช้ มีผลตั้งแต่ dispatch ถัดไป. วิธีเรียก: พิมพ์ `/pstack:setup-pstack`
+- **/pstack:automate-me** — สร้าง personal `-mode` skill จากนิสัยการทำงานของตัวเอง. วิธีเรียก: พิมพ์ `/pstack:automate-me`
+- **/pstack:reflect** — หลังจบงาน เปลี่ยนบทเรียนเป็นการแก้ skill ที่มีอยู่ซึ่งคุณอนุมัติ. วิธีเรียก: พิมพ์ `/pstack:reflect`
+- **/pstack:correct** — แก้ที่ repo ไม่ให้ agent ทำผิดแบบเดิมซ้ำ. วิธีเรียก: พิมพ์ `/pstack:correct`
+- **Playbook: Authoring or modifying a skill** — เขียนหรือแก้ SKILL.md ผ่าน playbook เพื่อให้มี validate และรีวิว. วิธีเรียก: พิมพ์ `/pstack:poteto-mode write a skill for <workflow>.`
 
 ## ตัวอย่าง prompt
 

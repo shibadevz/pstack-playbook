@@ -2,13 +2,15 @@
 
 ใช้เมื่อต้องพิสูจน์ว่างานใช้ได้จริงกับของจริง ไม่ใช่แค่ build ผ่าน หน้านี้อ่านได้โดยไม่ต้องใช้ database
 
-## เริ่มจากสิ่งเหล่านี้ (เรียงตามลำดับ)
+## เลือกใช้ตามสถานการณ์
 
-1. **/pstack:create-verification-skill** — สร้าง verify skill ที่ขับ app จริงเหมือนผู้ใช้ เป็นของที่คุ้มที่สุดถ้า project ยังไม่มี. วิธีเรียก: พิมพ์ `/pstack:create-verification-skill`
-2. **/pstack:control-ui** — ขับและ screenshot UI บน browser, Electron หรือ web. วิธีเรียก: พิมพ์ `/pstack:control-ui`
-3. **/pstack:control-cli** — ขับและบันทึก transcript ของ CLI/TUI. วิธีเรียก: พิมพ์ `/pstack:control-cli`
-4. **/pstack:principle-prove-it-works** — สั่งให้ agent ตรวจกับ artifact จริงก่อนประกาศว่าเสร็จ. วิธีเรียก: สั่งด้วยชื่อใน poteto-mode เช่น "apply prove it works" หรือพิมพ์ `/pstack:principle-prove-it-works`
-5. **/pstack:swarm** — ตรวจหลายชิ้นขนานแล้วรับรายงานเดียวเป็น PASS, ISSUES หรือ BLOCKED. วิธีเรียก: พิมพ์ `/pstack:swarm`
+ไม่ต้องใช้ครบทุกตัว เลือกตัวที่ตรงกับงานตอนนั้น ถ้าไม่แน่ใจให้เริ่มจากตัวแรก
+
+- **/pstack:create-verification-skill** — สร้าง verify skill ที่ขับ app จริงเหมือนผู้ใช้ เป็นของที่คุ้มที่สุดถ้า project ยังไม่มี. วิธีเรียก: พิมพ์ `/pstack:create-verification-skill`
+- **/pstack:control-ui** — ขับและ screenshot UI บน browser, Electron หรือ web. วิธีเรียก: พิมพ์ `/pstack:control-ui`
+- **/pstack:control-cli** — ขับและบันทึก transcript ของ CLI/TUI. วิธีเรียก: พิมพ์ `/pstack:control-cli`
+- **/pstack:principle-prove-it-works** — สั่งให้ agent ตรวจกับ artifact จริงก่อนประกาศว่าเสร็จ. วิธีเรียก: สั่งด้วยชื่อใน poteto-mode เช่น "apply prove it works" หรือพิมพ์ `/pstack:principle-prove-it-works`
+- **/pstack:swarm** — ตรวจหลายชิ้นขนานแล้วรับรายงานเดียวเป็น PASS, ISSUES หรือ BLOCKED. วิธีเรียก: พิมพ์ `/pstack:swarm`
 
 ## ตัวอย่าง prompt
 

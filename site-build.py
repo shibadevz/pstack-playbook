@@ -88,7 +88,7 @@ def prompt_tag(prompt, compact=False):
     return f'<PromptBlock{" compact" if compact else ""} text="{text}" />'
 
 
-ITEM_RE = re.compile(r"^(\d+\. \*\*(.+?)\*\*.*?)\s*วิธีเรียก:.*$", re.M)
+ITEM_RE = re.compile(r"^((?:\d+\.|-) \*\*(.+?)\*\*.*?)\s*วิธีเรียก:.*$", re.M)
 
 
 def inline_prompts(text, stem, prompt_of, hold):
@@ -96,7 +96,7 @@ def inline_prompts(text, stem, prompt_of, hold):
     def sub(m):
         name = m.group(2)
         assert name in prompt_of, f"{stem}: item has no CSV row: {name}"
-        return f"{m.group(1)}\n\n   {hold(prompt_tag(prompt_of[name], compact=True))}"
+        return f"{m.group(1).rstrip().removesuffix('.')}\n\n   {hold(prompt_tag(prompt_of[name], compact=True))}"
     return ITEM_RE.sub(sub, text)
 
 
