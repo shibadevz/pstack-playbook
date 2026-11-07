@@ -12,7 +12,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:interrogate the whole branch, but skeptically. don't change anything yet. no nitpicks unless it's a real bug or regression.
+/pstack:interrogate ทั้ง branch แบบสงสัยไว้ก่อน ยังไม่ต้องแก้อะไร ไม่ต้องจุกจิกเว้นแต่เป็น bug หรือ regression จริง
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

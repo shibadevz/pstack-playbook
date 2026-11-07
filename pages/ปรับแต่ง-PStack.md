@@ -13,7 +13,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:reflect capture what we learned so the next run doesn't repeat it.
+/pstack:reflect ช่วยจดสิ่งที่เราเรียนรู้ไว้ เพื่อให้รอบหน้าไม่พลาดซ้ำ
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

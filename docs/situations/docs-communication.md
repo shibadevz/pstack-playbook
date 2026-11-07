@@ -4,15 +4,21 @@
 
 ## เริ่มจากสิ่งเหล่านี้ (เรียงตามลำดับ)
 
-1. [**/pstack:technical-writing**](/skills/technical-writing.md) — มาตรฐานเขียน docs, RFC, README, PR description และ commit message. วิธีเรียก: พิมพ์ `/pstack:technical-writing`
-2. [**/pstack:unslop**](/skills/unslop.md) — ตัวคำและรูปประโยคที่ดูเหมือน AI เขียนออกจากข้อความ. วิธีเรียก: พิมพ์ `/pstack:unslop`
-3. [**/pstack:bro**](/skills/bro.md) — ให้ agent เล่า reply ล่าสุดใหม่เป็นภาษาคนธรรมดาและสั้นลง. วิธีเรียก: พิมพ์ `/pstack:bro`
-4. [**/pstack:ketchup**](/skills/ketchup.md) — สรุปสิ่งที่เปลี่ยนในแชตตั้งแต่ข้อความล่าสุดของคุณ. วิธีเรียก: พิมพ์ `/pstack:ketchup`
+1. [**/pstack:technical-writing**](/skills/technical-writing) — มาตรฐานเขียน docs, RFC, README, PR description และ commit message.
 
-## ตัวอย่าง prompt
+   <PromptBlock compact text="/pstack:technical-writing เขียน PR description สำหรับ branch นี้ ให้มี why, what changed, scope, blast radius และ verification" />
+2. [**/pstack:unslop**](/skills/unslop) — ตัวคำและรูปประโยคที่ดูเหมือน AI เขียนออกจากข้อความ.
 
-```text
-/pstack:technical-writing write the README section that explains how to run the export command. then /pstack:unslop it.
-```
+   <PromptBlock compact text="/pstack:unslop ข้อความนั้น ไม่เอา emdash" />
+3. [**/pstack:bro**](/skills/bro) — ให้ agent เล่า reply ล่าสุดใหม่เป็นภาษาคนธรรมดาและสั้นลง.
+
+   <PromptBlock compact text="/pstack:bro ช่วยเล่าข้อความล่าสุดเป็นภาษาคนธรรมดา สั้นๆ ไม่มี jargon" />
+4. [**/pstack:ketchup**](/skills/ketchup) — สรุปสิ่งที่เปลี่ยนในแชตตั้งแต่ข้อความล่าสุดของคุณ.
+
+   <PromptBlock compact text="/pstack:ketchup ช่วยตามให้ทันว่าในแชตนี้มีอะไรเปลี่ยนไปบ้าง" />
+
+## ตัวอย่าง prompt รวม
+
+<PromptBlock text="/pstack:technical-writing เขียนหัวข้อ README ที่อธิบายวิธีรันคำสั่ง export แล้ว /pstack:unslop อีกรอบ" />
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

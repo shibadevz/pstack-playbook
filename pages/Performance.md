@@ -13,7 +13,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:poteto-mode exporting the 60k-row fixture takes 40s. trace it, fix the measured cause, and show me before and after.
+/pstack:poteto-mode export fixture 60k แถวใช้เวลา 40 วินาที ช่วย trace หา fix สาเหตุที่วัดได้ และให้ดูก่อนกับหลัง
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

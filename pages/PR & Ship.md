@@ -12,7 +12,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:poteto-mode open the pr. small ordered commits, evidence in the description.
+/pstack:poteto-mode เปิด PR commit เล็กๆ เรียงลำดับ ใส่หลักฐานใน description
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

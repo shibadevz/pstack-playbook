@@ -13,7 +13,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:poteto-mode the export creates duplicate rows when a retry happens. repro first, if there's a cheap test path /pstack:tdd it, then fix and rerun.
+/pstack:poteto-mode ตอน retry แล้ว export สร้างแถวซ้ำ ช่วย repro ก่อน ถ้ามีทางเขียน test ที่ถูกให้ /pstack:tdd แล้วค่อย fix และ rerun
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

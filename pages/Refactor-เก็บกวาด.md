@@ -13,7 +13,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:poteto-mode move the pricing code from three files into src/pricing/, zero behavior change. record the current output first and prove it's unchanged after.
+/pstack:poteto-mode ย้ายโค้ด pricing จากสามไฟล์เข้า src/pricing/ โดย behavior ต้องไม่เปลี่ยนเลย บันทึก output ปัจจุบันก่อน แล้วพิสูจน์ว่าไม่เปลี่ยนหลังย้าย
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน

@@ -13,7 +13,7 @@
 ## ตัวอย่าง prompt
 
 ```text
-/pstack:poteto-mode fix the export button. apply prove it works. show me the real output of the export, not the build log.
+/pstack:poteto-mode แก้ปุ่ม export apply prove it works ให้ดู output จริงของ export ไม่ใช่ build log
 ```
 
 เขียน prompt โดยบอก goal และ done check ที่ตรวจได้ ไม่ต้องไล่ชื่อ skill เอง ให้ `/pstack:poteto-mode` เลือกขั้นตอน
